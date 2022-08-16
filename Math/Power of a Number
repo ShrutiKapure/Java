@@ -1,0 +1,17 @@
+import java.util.*;
+public class Power {
+
+    
+    public static void main(String[] args) {
+        int i;
+        double a, b;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number");
+        i = sc.nextInt();
+        a = Math.pow(i, 2);
+        b = Math.pow(i, 3);
+        System.out.println("Square of "+i+":"+a);
+        System.out.println("Cube of "+i+":"+b);
+    }
+    
+}
