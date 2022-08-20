@@ -1,0 +1,15 @@
+class MethodOverloading {
+
+    private static void display(int a){
+        System.out.println("argument : " + a);
+    }
+    
+    private static void display(int a, int b){
+        System.out.println("argument : " + a + " and " + b);
+    }
+    public static void main(String[] args) {
+        display(50);
+        display(10, 20);
+    }
+    
+}
