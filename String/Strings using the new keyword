@@ -1,0 +1,15 @@
+class Main {
+  public static void main(String[] args) {
+
+    // create a string using new
+    String name = new String("Java String");
+
+    System.out.println(name);  // print Java String
+  }
+}
+
+//creating strings using string literals,
+String example = "Java";
+
+//creating strings using the new keyword,
+String example = new String("Java");
