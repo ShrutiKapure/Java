@@ -1,0 +1,18 @@
+public class Main {
+     
+    //create a method
+    public static int square(int num){
+        return num * num;
+    }
+    public static void main(String[] args) {
+      int result;
+      
+      //call the method
+      //store return value to result
+      result = square(10);
+      
+      System.out.println("square is " +result);
+      
+    }
+    
+}
