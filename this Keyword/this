@@ -1,0 +1,17 @@
+
+//this keyword is used to refer to the current object inside a method or a constructor
+
+class Main {
+    int instaVar;
+    
+    Main(int instaVar){
+        this.instaVar = instaVar;
+        System.out.println("this reference = " + this);
+    }
+
+    public static void main(String[] args) {
+        Main obj = new Main(8);
+        
+        System.out.println("object refernce = " + obj);
+    }
+}
