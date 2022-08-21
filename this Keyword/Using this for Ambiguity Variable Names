@@ -1,0 +1,39 @@
+//example without using this keyword:
+
+class Main {
+    int instaVar;
+    Main(int instaVar){
+        instaVar = instaVar;
+    }
+
+    public static void main(String[] args) {
+        Main obj = new Main(8);
+        
+        System.out.println("object refernce = " + obj.instaVar);
+    }
+}
+
+//OUTPUT
+
+object refernce = 0
+//In the above example, we have passed 8 as a value to the constructor. However, we are getting 0 as an output. 
+//This is because the Java compiler gets confused because of the ambiguity in names between instance the variable and the parameter.
+
+//WITH USING this KEYWORD
+
+class Main {
+    int instaVar;
+    Main(int instaVar){
+        this.instaVar = instaVar;
+    }
+
+    public static void main(String[] args) {
+        Main obj = new Main(8);
+        
+        System.out.println("object refernce = " + obj.instaVar);
+    }
+}
+
+//OUTPUT
+
+object refernce = 8
