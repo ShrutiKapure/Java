@@ -1,0 +1,20 @@
+class Data {
+    private String name;
+    
+    //get name - getter
+    public String getName(){
+        return this.name;
+    }
+    
+    //set name - setter
+    public void setName(String name){
+        this.name = name;
+    }
+    public static void main(String[] args) {
+        Data d = new Data();
+        
+        // access the private variable using the getter and setter
+        d.setName("Shruti");
+        System.out.println(d.getName());
+    }
+}
