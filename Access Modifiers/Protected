@@ -1,0 +1,19 @@
+class Animal {
+    
+    //protected method
+    protected void display(){
+        System.out.println("I am an animal");
+    }
+}
+class Dog extends Animal{
+
+    public static void main(String[] args) {
+        
+        //create object
+        Dog dog = new Dog();
+        
+        
+        //access protected method - objectname.protected method name
+        dog.display();
+    }
+}
