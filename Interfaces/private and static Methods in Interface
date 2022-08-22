@@ -1,0 +1,11 @@
+The Java 8 also added another feature to include static methods inside an interface.
+
+Similar to a class, we can access static methods of an interface using its references. For example,
+
+// create an interface
+interface Polygon {
+  staticMethod(){..}
+}
+
+// access static method
+Polygon.staticMethod();
