@@ -1,0 +1,17 @@
+
+An abstract class can have constructors like the regular class.
+And, we can access the constructor of an abstract class from the subclass using the super keyword. For example,
+
+abstract class Animal {
+   Animal() {
+      ….
+   }
+}
+
+class Dog extends Animal {
+   Dog() {
+      super();
+      ...
+   }
+}
+Here, we have used the super() inside the constructor of Dog to access the constructor of the Animal.
