@@ -15,3 +15,4 @@ class Dog extends Animal {
    }
 }
 Here, we have used the super() inside the constructor of Dog to access the constructor of the Animal.
+Note that the super should always be the first statement of the subclass constructor.
