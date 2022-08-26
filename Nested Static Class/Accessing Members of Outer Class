@@ -1,0 +1,36 @@
+class Animal {
+  static class Mammal {
+   public void displayInfo() {
+     System.out.println("I am a mammal.");
+   }
+ }
+
+ class Reptile {
+   public void displayInfo() {
+     System.out.println("I am a reptile.");
+   }
+ }
+
+ public void eat() {
+   System.out.println("I eat food.");
+ }
+}
+
+class Main {
+ public static void main(String[] args) {
+   Animal animal = new Animal();
+   Animal.Reptile reptile = animal.new Reptile();
+   reptile.displayInfo();
+
+   Animal.Mammal mammal = new Animal.Mammal();
+   mammal.displayInfo();
+   mammal.eat();
+ }
+}
+
+In the above example, we have created a non-static method eat() inside the class Animal.
+
+Now, if we try to access eat() using the object mammal, the compiler shows an error.
+
+It is because mammal is an object of a static class and we cannot access non-static methods from static classes.
+
