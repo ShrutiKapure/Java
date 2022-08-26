@@ -1,0 +1,13 @@
+static class Animal {
+ public static void displayInfo() {
+   System.out.println("I am an animal");
+ }
+}
+
+class Main {
+ public static void main(String[] args) {
+   Animal.displayInfo();
+ }
+}
+
+In the above example, we have tried to create a static class Animal. Since Java doesn’t allow static top-level class, we will get an error.
